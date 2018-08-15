@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: NewToDo should add an item based on the value in the state 1`] = `
+<NewToDo>
+  <div
+    className="items-container"
+  >
+    <div
+      className="form-container"
+    >
+      <form
+        className="form"
+        onSubmit={[Function]}
+      >
+        <input
+          onChange={[Function]}
+        />
+        <div
+          className="err"
+        >
+          input field can not be emply
+        </div>
+        <button>
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</NewToDo>
+`;

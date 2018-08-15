@@ -1,0 +1,796 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: App App renders without crashing 1`] = `
+App {
+  "_reactInternalFiber": FiberNode {
+    "_debugID": 4,
+    "_debugIsCurrentlyTiming": false,
+    "_debugOwner": null,
+    "_debugSource": null,
+    "actualDuration": 0,
+    "actualStartTime": 0,
+    "alternate": null,
+    "child": FiberNode {
+      "_debugID": 5,
+      "_debugIsCurrentlyTiming": false,
+      "_debugOwner": [Circular],
+      "_debugSource": null,
+      "actualDuration": 0,
+      "actualStartTime": 0,
+      "alternate": null,
+      "child": FiberNode {
+        "_debugID": 6,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": [Circular],
+        "_debugSource": null,
+        "actualDuration": 0,
+        "actualStartTime": 0,
+        "alternate": null,
+        "child": FiberNode {
+          "_debugID": 8,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": [Circular],
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": 0,
+          "alternate": null,
+          "child": null,
+          "effectTag": 0,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "children": "To-DO list",
+            "className": "Header-Container",
+          },
+          "memoizedState": null,
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "children": "To-DO list",
+            "className": "Header-Container",
+          },
+          "ref": null,
+          "return": [Circular],
+          "selfBaseTime": 0,
+          "sibling": null,
+          "stateNode": <div
+            class="Header-Container"
+          >
+            To-DO list
+          </div>,
+          "tag": 5,
+          "treeBaseTime": 0,
+          "type": "div",
+          "updateQueue": null,
+        },
+        "effectTag": 1,
+        "expirationTime": 0,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": Object {},
+        "memoizedState": null,
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": Object {},
+        "ref": null,
+        "return": [Circular],
+        "selfBaseTime": 0,
+        "sibling": FiberNode {
+          "_debugID": 7,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": [Circular],
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": 0,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 9,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": 0,
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 10,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": 0,
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 11,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": 0,
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 12,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "actualDuration": 0,
+                  "actualStartTime": 0,
+                  "alternate": null,
+                  "child": null,
+                  "effectTag": 0,
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "onChange": [Function],
+                    "value": undefined,
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "onChange": [Function],
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseTime": 0,
+                  "sibling": FiberNode {
+                    "_debugID": 13,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": 0,
+                    "alternate": null,
+                    "child": null,
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 1,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": "",
+                      "className": "err",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "children": "",
+                      "className": "err",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseTime": 0,
+                    "sibling": FiberNode {
+                      "_debugID": 14,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": null,
+                      "actualDuration": 0,
+                      "actualStartTime": 0,
+                      "alternate": null,
+                      "child": null,
+                      "effectTag": 0,
+                      "expirationTime": 0,
+                      "firstEffect": null,
+                      "index": 2,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "children": "Submit",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "children": "Submit",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseTime": 0,
+                      "sibling": null,
+                      "stateNode": <button>
+                        Submit
+                      </button>,
+                      "tag": 5,
+                      "treeBaseTime": 0,
+                      "type": "button",
+                      "updateQueue": null,
+                    },
+                    "stateNode": <div
+                      class="err"
+                    />,
+                    "tag": 5,
+                    "treeBaseTime": 0,
+                    "type": "div",
+                    "updateQueue": null,
+                  },
+                  "stateNode": <input
+                    value=""
+                  />,
+                  "tag": 5,
+                  "treeBaseTime": 0,
+                  "type": "input",
+                  "updateQueue": null,
+                },
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": Array [
+                    <input
+                      onChange={[Function]}
+                    />,
+                    <div
+                      className="err"
+                    >
+                      
+                    </div>,
+                    <button>
+                      Submit
+                    </button>,
+                  ],
+                  "className": "form",
+                  "onSubmit": [Function],
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": Array [
+                    <input
+                      onChange={[Function]}
+                    />,
+                    <div
+                      className="err"
+                    >
+                      
+                    </div>,
+                    <button>
+                      Submit
+                    </button>,
+                  ],
+                  "className": "form",
+                  "onSubmit": [Function],
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseTime": 0,
+                "sibling": null,
+                "stateNode": <form
+                  class="form"
+                >
+                  <input
+                    value=""
+                  />
+                  <div
+                    class="err"
+                  />
+                  <button>
+                    Submit
+                  </button>
+                </form>,
+                "tag": 5,
+                "treeBaseTime": 0,
+                "type": "form",
+                "updateQueue": null,
+              },
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": <form
+                  className="form"
+                  onSubmit={[Function]}
+                >
+                  <input
+                    onChange={[Function]}
+                  />
+                  <div
+                    className="err"
+                  >
+                    
+                  </div>
+                  <button>
+                    Submit
+                  </button>
+                </form>,
+                "className": "form-container",
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": <form
+                  className="form"
+                  onSubmit={[Function]}
+                >
+                  <input
+                    onChange={[Function]}
+                  />
+                  <div
+                    className="err"
+                  >
+                    
+                  </div>
+                  <button>
+                    Submit
+                  </button>
+                </form>,
+                "className": "form-container",
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseTime": 0,
+              "sibling": null,
+              "stateNode": <div
+                class="form-container"
+              >
+                <form
+                  class="form"
+                >
+                  <input
+                    value=""
+                  />
+                  <div
+                    class="err"
+                  />
+                  <button>
+                    Submit
+                  </button>
+                </form>
+              </div>,
+              "tag": 5,
+              "treeBaseTime": 0,
+              "type": "div",
+              "updateQueue": null,
+            },
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": <div
+                className="form-container"
+              >
+                <form
+                  className="form"
+                  onSubmit={[Function]}
+                >
+                  <input
+                    onChange={[Function]}
+                  />
+                  <div
+                    className="err"
+                  >
+                    
+                  </div>
+                  <button>
+                    Submit
+                  </button>
+                </form>
+              </div>,
+              "className": "items-container",
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "children": <div
+                className="form-container"
+              >
+                <form
+                  className="form"
+                  onSubmit={[Function]}
+                >
+                  <input
+                    onChange={[Function]}
+                  />
+                  <div
+                    className="err"
+                  >
+                    
+                  </div>
+                  <button>
+                    Submit
+                  </button>
+                </form>
+              </div>,
+              "className": "items-container",
+            },
+            "ref": null,
+            "return": [Circular],
+            "selfBaseTime": 0,
+            "sibling": null,
+            "stateNode": <div
+              class="items-container"
+            >
+              <div
+                class="form-container"
+              >
+                <form
+                  class="form"
+                >
+                  <input
+                    value=""
+                  />
+                  <div
+                    class="err"
+                  />
+                  <button>
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>,
+            "tag": 5,
+            "treeBaseTime": 0,
+            "type": "div",
+            "updateQueue": null,
+          },
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 1,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {},
+          "memoizedState": Object {
+            "err": "",
+            "items": Array [],
+            "toDoItem": "",
+          },
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {},
+          "ref": null,
+          "return": [Circular],
+          "selfBaseTime": 0,
+          "sibling": null,
+          "stateNode": NewToDo {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "onChange": [Function],
+            "onSubmit": [Function],
+            "props": Object {},
+            "refs": Object {},
+            "state": Object {
+              "err": "",
+              "items": Array [],
+              "toDoItem": "",
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 2,
+          "treeBaseTime": 0,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "stateNode": Header {
+          "_reactInternalFiber": [Circular],
+          "_reactInternalInstance": Object {},
+          "context": Object {},
+          "props": Object {},
+          "refs": Object {},
+          "state": null,
+          "updater": Object {
+            "enqueueForceUpdate": [Function],
+            "enqueueReplaceState": [Function],
+            "enqueueSetState": [Function],
+            "isMounted": [Function],
+          },
+        },
+        "tag": 2,
+        "treeBaseTime": 0,
+        "type": [Function],
+        "updateQueue": null,
+      },
+      "effectTag": 0,
+      "expirationTime": 0,
+      "firstEffect": null,
+      "index": 0,
+      "key": null,
+      "lastEffect": null,
+      "memoizedProps": Object {
+        "children": Array [
+          <Header />,
+          <NewToDo />,
+        ],
+      },
+      "memoizedState": null,
+      "mode": 0,
+      "nextEffect": null,
+      "pendingProps": Object {
+        "children": Array [
+          <Header />,
+          <NewToDo />,
+        ],
+      },
+      "ref": null,
+      "return": [Circular],
+      "selfBaseTime": 0,
+      "sibling": null,
+      "stateNode": <div>
+        <div
+          class="Header-Container"
+        >
+          To-DO list
+        </div>
+        <div
+          class="items-container"
+        >
+          <div
+            class="form-container"
+          >
+            <form
+              class="form"
+            >
+              <input
+                value=""
+              />
+              <div
+                class="err"
+              />
+              <button>
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>,
+      "tag": 5,
+      "treeBaseTime": 0,
+      "type": "div",
+      "updateQueue": null,
+    },
+    "effectTag": 1,
+    "expirationTime": 0,
+    "firstEffect": null,
+    "index": 0,
+    "key": null,
+    "lastEffect": null,
+    "memoizedProps": Object {},
+    "memoizedState": null,
+    "mode": 0,
+    "nextEffect": null,
+    "pendingProps": Object {},
+    "ref": null,
+    "return": FiberNode {
+      "_debugID": 1,
+      "_debugIsCurrentlyTiming": false,
+      "_debugOwner": null,
+      "_debugSource": null,
+      "actualDuration": 0,
+      "actualStartTime": 0,
+      "alternate": FiberNode {
+        "_debugID": 1,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": null,
+        "_debugSource": null,
+        "actualDuration": 0,
+        "actualStartTime": 0,
+        "alternate": [Circular],
+        "child": null,
+        "effectTag": 0,
+        "expirationTime": 1,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": null,
+        "memoizedState": null,
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": null,
+        "ref": null,
+        "return": null,
+        "selfBaseTime": 0,
+        "sibling": null,
+        "stateNode": Object {
+          "containerInfo": <div>
+            <div>
+              <div
+                class="Header-Container"
+              >
+                To-DO list
+              </div>
+              <div
+                class="items-container"
+              >
+                <div
+                  class="form-container"
+                >
+                  <form
+                    class="form"
+                  >
+                    <input
+                      value=""
+                    />
+                    <div
+                      class="err"
+                    />
+                    <button>
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>,
+          "context": Object {},
+          "current": [Circular],
+          "earliestPendingTime": 0,
+          "earliestSuspendedTime": 0,
+          "finishedWork": null,
+          "firstBatch": null,
+          "hydrate": false,
+          "latestPendingTime": 0,
+          "latestPingedTime": 0,
+          "latestSuspendedTime": 0,
+          "nextScheduledRoot": null,
+          "pendingChildren": null,
+          "pendingCommitExpirationTime": 0,
+          "pendingContext": null,
+          "remainingExpirationTime": 0,
+        },
+        "tag": 3,
+        "treeBaseTime": 0,
+        "type": null,
+        "updateQueue": Object {
+          "baseState": null,
+          "expirationTime": 1,
+          "firstCapturedEffect": null,
+          "firstCapturedUpdate": null,
+          "firstEffect": null,
+          "firstUpdate": Object {
+            "callback": null,
+            "expirationTime": 1,
+            "next": null,
+            "nextEffect": null,
+            "payload": Object {
+              "element": <App />,
+            },
+            "tag": 0,
+          },
+          "lastCapturedEffect": null,
+          "lastCapturedUpdate": null,
+          "lastEffect": null,
+          "lastUpdate": Object {
+            "callback": null,
+            "expirationTime": 1,
+            "next": null,
+            "nextEffect": null,
+            "payload": Object {
+              "element": <App />,
+            },
+            "tag": 0,
+          },
+        },
+      },
+      "child": [Circular],
+      "effectTag": 32,
+      "expirationTime": 0,
+      "firstEffect": [Circular],
+      "index": 0,
+      "key": null,
+      "lastEffect": [Circular],
+      "memoizedProps": null,
+      "memoizedState": Object {
+        "element": <App />,
+      },
+      "mode": 0,
+      "nextEffect": null,
+      "pendingProps": null,
+      "ref": null,
+      "return": null,
+      "selfBaseTime": 0,
+      "sibling": null,
+      "stateNode": Object {
+        "containerInfo": <div>
+          <div>
+            <div
+              class="Header-Container"
+            >
+              To-DO list
+            </div>
+            <div
+              class="items-container"
+            >
+              <div
+                class="form-container"
+              >
+                <form
+                  class="form"
+                >
+                  <input
+                    value=""
+                  />
+                  <div
+                    class="err"
+                  />
+                  <button>
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>,
+        "context": Object {},
+        "current": [Circular],
+        "earliestPendingTime": 0,
+        "earliestSuspendedTime": 0,
+        "finishedWork": null,
+        "firstBatch": null,
+        "hydrate": false,
+        "latestPendingTime": 0,
+        "latestPingedTime": 0,
+        "latestSuspendedTime": 0,
+        "nextScheduledRoot": null,
+        "pendingChildren": null,
+        "pendingCommitExpirationTime": 0,
+        "pendingContext": null,
+        "remainingExpirationTime": 0,
+      },
+      "tag": 3,
+      "treeBaseTime": 0,
+      "type": null,
+      "updateQueue": Object {
+        "baseState": Object {
+          "element": <App />,
+        },
+        "expirationTime": 0,
+        "firstCapturedEffect": null,
+        "firstCapturedUpdate": null,
+        "firstEffect": null,
+        "firstUpdate": null,
+        "lastCapturedEffect": null,
+        "lastCapturedUpdate": null,
+        "lastEffect": null,
+        "lastUpdate": null,
+      },
+    },
+    "selfBaseTime": 0,
+    "sibling": null,
+    "stateNode": [Circular],
+    "tag": 2,
+    "treeBaseTime": 0,
+    "type": [Function],
+    "updateQueue": null,
+  },
+  "_reactInternalInstance": Object {},
+  "context": Object {},
+  "props": Object {},
+  "refs": Object {},
+  "state": null,
+  "updater": Object {
+    "enqueueForceUpdate": [Function],
+    "enqueueReplaceState": [Function],
+    "enqueueSetState": [Function],
+    "isMounted": [Function],
+  },
+}
+`;
