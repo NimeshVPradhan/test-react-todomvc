@@ -5763,6 +5763,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 var Header = __webpack_require__(/*! ../components/Header */ "./src/components/Header.js");
+var NewToDo = __webpack_require__(/*! ./NewToDo */ "./src/containers/NewToDo.js");
 
 var App = function (_React$Component) {
   _inherits(App, _React$Component);
@@ -5779,7 +5780,8 @@ var App = function (_React$Component) {
       return React.createElement(
         'div',
         null,
-        React.createElement(Header, null)
+        React.createElement(Header, null),
+        React.createElement(NewToDo, null)
       );
     }
   }]);
@@ -5788,6 +5790,106 @@ var App = function (_React$Component) {
 }(React.Component);
 
 module.exports = App;
+
+/***/ }),
+
+/***/ "./src/containers/NewToDo.js":
+/*!***********************************!*\
+  !*** ./src/containers/NewToDo.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var NewToDo = function (_React$Component) {
+  _inherits(NewToDo, _React$Component);
+
+  function NewToDo(props) {
+    _classCallCheck(this, NewToDo);
+
+    var _this = _possibleConstructorReturn(this, (NewToDo.__proto__ || Object.getPrototypeOf(NewToDo)).call(this, props));
+
+    _this.state = {
+      toDoItem: '',
+      items: [],
+      err: ''
+    };
+
+    _this.onSubmit = _this.onSubmit.bind(_this);
+    _this.onChange = _this.onChange.bind(_this);
+    return _this;
+  }
+
+  _createClass(NewToDo, [{
+    key: 'onChange',
+    value: function onChange(event) {
+      this.setState({
+        toDoItem: event.target.value
+      });
+    }
+  }, {
+    key: 'onSubmit',
+    value: function onSubmit(event) {
+      event.preventDefault();
+      if (!this.state.toDoItem.trim()) {
+        this.setState({
+          err: 'input field can not be emply'
+        });
+      } else {
+        this.setState({
+          err: '',
+          items: [].concat(_toConsumableArray(this.state.Items), [this.state.ToDoItem]),
+          toDoItem: ''
+        });
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return React.createElement(
+        'div',
+        { className: 'items-container' },
+        React.createElement(
+          'div',
+          { className: 'form-container' },
+          React.createElement(
+            'form',
+            { onSubmit: this.onSubmit, className: 'form' },
+            React.createElement('input', { value: this.state.ToDoItem, onChange: this.onChange }),
+            React.createElement(
+              'div',
+              { className: 'err' },
+              this.state.err
+            ),
+            React.createElement(
+              'button',
+              null,
+              'Submit'
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return NewToDo;
+}(React.Component);
+
+module.exports = NewToDo;
 
 /***/ }),
 
