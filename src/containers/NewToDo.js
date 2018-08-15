@@ -4,8 +4,8 @@ class NewToDo extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      toDoItem : '',
-      items : [],
+      ToDoItem : '',
+      Items : [],
       err: ''
     }
 
@@ -15,36 +15,40 @@ class NewToDo extends React.Component{
 
   onChange(event){
     this.setState({
-      toDoItem:event.target.value
+      ToDoItem:event.target.value
     })
   }
 
   onSubmit(event){
     event.preventDefault();
-    if(!this.state.toDoItem.trim()){
+    if(!this.state.ToDoItem.trim()){
         this.setState({
           err: 'input field can not be emply'
         })
     }else{
+    var itemList = this.state.Items;
+    var i = itemList.length==0?1:itemList[itemList.length-1].index+1;
+    var item = {
+      index: i,
+      task : this.state.ToDoItem,
+      completed : false
+    }
     this.setState({
       err: '',
-      items : [...this.state.Items, this.state.ToDoItem],
-      toDoItem:''
+      Items : [...this.state.Items, item],
+      ToDoItem:''
     });
   }
   }
 
   render(){
     return(
-      <div className="items-container">
-      <div className="form-container">
-      <form onSubmit ={this.onSubmit} className="form">
+      <div>
+      <form onSubmit ={this.onSubmit} className="Form">
         <input value={this.state.ToDoItem} onChange = {this.onChange}/>
         <div className="err">{this.state.err}</div>
         <button>Submit</button>
       </form>
-      </div>
-
       </div>
     )
   }

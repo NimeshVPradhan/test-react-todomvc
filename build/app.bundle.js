@@ -5824,8 +5824,8 @@ var NewToDo = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (NewToDo.__proto__ || Object.getPrototypeOf(NewToDo)).call(this, props));
 
     _this.state = {
-      toDoItem: '',
-      items: [],
+      ToDoItem: '',
+      Items: [],
       err: ''
     };
 
@@ -5838,22 +5838,29 @@ var NewToDo = function (_React$Component) {
     key: 'onChange',
     value: function onChange(event) {
       this.setState({
-        toDoItem: event.target.value
+        ToDoItem: event.target.value
       });
     }
   }, {
     key: 'onSubmit',
     value: function onSubmit(event) {
       event.preventDefault();
-      if (!this.state.toDoItem.trim()) {
+      if (!this.state.ToDoItem.trim()) {
         this.setState({
           err: 'input field can not be emply'
         });
       } else {
+        var itemList = this.state.Items;
+        var i = itemList.length == 0 ? 1 : itemList[itemList.length - 1].index + 1;
+        var item = {
+          index: i,
+          task: this.state.ToDoItem,
+          completed: false
+        };
         this.setState({
           err: '',
-          items: [].concat(_toConsumableArray(this.state.Items), [this.state.ToDoItem]),
-          toDoItem: ''
+          Items: [].concat(_toConsumableArray(this.state.Items), [item]),
+          ToDoItem: ''
         });
       }
     }
@@ -5862,24 +5869,20 @@ var NewToDo = function (_React$Component) {
     value: function render() {
       return React.createElement(
         'div',
-        { className: 'items-container' },
+        null,
         React.createElement(
-          'div',
-          { className: 'form-container' },
+          'form',
+          { onSubmit: this.onSubmit, className: 'Form' },
+          React.createElement('input', { value: this.state.ToDoItem, onChange: this.onChange }),
           React.createElement(
-            'form',
-            { onSubmit: this.onSubmit, className: 'form' },
-            React.createElement('input', { value: this.state.ToDoItem, onChange: this.onChange }),
-            React.createElement(
-              'div',
-              { className: 'err' },
-              this.state.err
-            ),
-            React.createElement(
-              'button',
-              null,
-              'Submit'
-            )
+            'div',
+            { className: 'err' },
+            this.state.err
+          ),
+          React.createElement(
+            'button',
+            null,
+            'Submit'
           )
         )
       );
