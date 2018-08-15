@@ -1,0 +1,19 @@
+{
+  "name": "packge.json",
+  "version": "1.0.0",
+  "description": "submission Genius Plaza",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NimeshVPradhan/test-react-todomvc.git"
+  },
+  "author": "Nimesh Pradhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NimeshVPradhan/test-react-todomvc/issues"
+  },
+  "homepage": "https://github.com/NimeshVPradhan/test-react-todomvc#readme"
+}
