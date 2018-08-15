@@ -1,4 +1,5 @@
 var React = require('react');
+var ToDoItems = require('./ToDoItems');
 
 class NewToDo extends React.Component{
   constructor(props){
@@ -43,12 +44,13 @@ class NewToDo extends React.Component{
 
   render(){
     return(
-      <div>
+      <div className="task-container">
       <form onSubmit ={this.onSubmit} className="Form">
         <input value={this.state.ToDoItem} onChange = {this.onChange}/>
         <div className="err">{this.state.err}</div>
         <button>Submit</button>
       </form>
+      <ToDoItems items={this.state.Items} />
       </div>
     )
   }

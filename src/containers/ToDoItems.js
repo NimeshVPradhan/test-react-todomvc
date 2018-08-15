@@ -1,34 +1,29 @@
 var React = require('react');
-var DisplayToDo = require('../components/DisplayToDo');
+//var DisplayToDo = require('../components/DisplayToDo');
 
 class ToDoItems extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      toggled: {},
-      counter:0
+        toggled: false
     }
     this.onClick = this.onClick.bind(this);
     this.getCounter = this.getCounter.bind(this);
   }
 
   onClick(index){
-    //console.log(this.state)
-    var toggled = this.state.toggled;
-    toggled[index] = !toggled[index];
+    this.props.items[index].completed = !this.props.items[index].completed;
     this.setState({
-      toggled: toggled
-      })
+      toggled: !this.state.toggled
+    })
   }
 
   getCounter(){
-    var toggled = this.state.toggled;
-    var t=this.props.items.length;
-    var count=0;
-    for(let x in toggled){
-      toggled[x]?count++:count;
+    var toggled = 0;
+    for (let index in this.props.items){
+      this.props.items[index].completed?toggled:toggled++;
     }
-    return t-count;
+    return toggled;
   }
 
   render(){
@@ -36,9 +31,9 @@ class ToDoItems extends React.Component{
       <div className="ToDoItems-Container">
       <table>
       <tbody>
-        {this.props.items.map((item, index)=> <tr key={index}  className={this.state.toggled[index]?'active':'inactive'}>
-                                    <DisplayToDo item={item}/>
-                                    <th><button onClick={this.onClick.bind(this, index)}>{this.state.toggled[index]?'completed':'incomplete'}</button></th>
+        {this.props.items.map((item, index)=> <tr key={index} >
+                                    {item.task}
+                                    <th><button onClick={this.onClick.bind(this, index)}>{item.completed?'completed':'incomplete'}</button></th>
                                     </tr>)}
 
       </tbody>
