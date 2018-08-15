@@ -5696,6 +5696,54 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./src/components/DisplayToDo.js":
+/*!***************************************!*\
+  !*** ./src/components/DisplayToDo.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var DisplayToDo = function (_React$Component) {
+  _inherits(DisplayToDo, _React$Component);
+
+  function DisplayToDo() {
+    _classCallCheck(this, DisplayToDo);
+
+    return _possibleConstructorReturn(this, (DisplayToDo.__proto__ || Object.getPrototypeOf(DisplayToDo)).apply(this, arguments));
+  }
+
+  _createClass(DisplayToDo, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "th",
+        { className: "task" },
+        this.props.task,
+        React.createElement("input", { className: "distroy", type: "button", value: "Update" })
+      );
+    }
+  }]);
+
+  return DisplayToDo;
+}(React.Component);
+
+module.exports = DisplayToDo;
+
+/***/ }),
+
 /***/ "./src/components/Header.js":
 /*!**********************************!*\
   !*** ./src/components/Header.js ***!
@@ -5917,7 +5965,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-//var DisplayToDo = require('../components/DisplayToDo');
+var DisplayToDo = __webpack_require__(/*! ../components/DisplayToDo */ "./src/components/DisplayToDo.js");
 
 var ToDoItems = function (_React$Component) {
   _inherits(ToDoItems, _React$Component);
@@ -5970,13 +6018,13 @@ var ToDoItems = function (_React$Component) {
               return React.createElement(
                 'tr',
                 { key: index },
-                item.task,
+                React.createElement(DisplayToDo, { task: item.task }),
                 React.createElement(
                   'th',
                   null,
                   React.createElement(
                     'button',
-                    { onClick: _this2.onClick.bind(_this2, index) },
+                    { onClick: _this2.onClick.bind(_this2, index), className: item.completed ? 'completed' : 'incomplete' },
                     item.completed ? 'completed' : 'incomplete'
                   )
                 )

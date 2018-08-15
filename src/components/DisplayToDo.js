@@ -4,7 +4,7 @@ class DisplayToDo extends React.Component{
 
   render(){
     return(
-        <th className="task-list">{this.props.item}<input className="distroy" type="button" value="Update" /></th>
+        <th className="task">{this.props.task}<input className="distroy" type="button" value="Update" /></th>
     )
   }
 

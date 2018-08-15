@@ -1,5 +1,5 @@
 var React = require('react');
-//var DisplayToDo = require('../components/DisplayToDo');
+var DisplayToDo = require('../components/DisplayToDo');
 
 class ToDoItems extends React.Component{
   constructor(props){
@@ -32,8 +32,8 @@ class ToDoItems extends React.Component{
       <table>
       <tbody>
         {this.props.items.map((item, index)=> <tr key={index} >
-                                    {item.task}
-                                    <th><button onClick={this.onClick.bind(this, index)}>{item.completed?'completed':'incomplete'}</button></th>
+                                    <DisplayToDo task={item.task} />
+                                    <th><button onClick={this.onClick.bind(this, index)} className={item.completed?'completed':'incomplete'}>{item.completed?'completed':'incomplete'}</button></th>
                                     </tr>)}
 
       </tbody>
