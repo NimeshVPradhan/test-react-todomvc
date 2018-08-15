@@ -1,0 +1,126 @@
+$form-background : #CACFD2;
+$form-width : 500px;
+$form-height : 60px;
+$task-width : 500px;
+$task-height : 30px;
+$header-container-height : 60px;
+
+.main-container {
+  position: relative;
+  align-self: center;
+  width: $task-width;
+  margin: auto;
+}
+
+.Header-Container {
+  position: absolute;
+  align-self: center;
+  width: $task-width;
+  height: $header-container-height;
+  border: 1px solid black;
+  margin: auto;
+  text-align: center;
+}
+
+.task-container {
+  position: absolute;
+  top : $header-container-height*1.1;
+  align-self: center;
+  width: $task-width;
+  max-height: 500px;
+}
+
+.Form {
+  position: absolute;
+  top: 0px;
+  background-color: $form-background;
+  width: $form-width;
+  height: $form-height;
+  margin: auto;
+}
+
+.ToDoItems-Container {
+  position: absolute;
+  top: $form-height*1.1;
+  width: $form-width;
+  align-content: center;
+}
+
+table {
+  border: 1px solid black;
+  table-layout: fixed;
+  text-align: right;
+  max-width: $task-width;
+}
+
+table tr {
+  width: $task-width;
+  height: $task-height;
+}
+
+table .task {
+  width: $task-width*0.8;
+  text-align: right;
+  word-break: break-all;
+}
+
+.task:hover input {
+    display: block;
+    opacity: 0.8;
+}
+
+.task:hover div {
+  opacity: 0.5;
+}
+
+.task input {
+    position:absolute;
+    display:none;
+    width: $task-width*0.8;
+}
+
+.task input.distroy {
+    top:0;
+    right:0;
+    height: $task-height;
+    width: $task-width*0.8;
+    text-align:center;
+}
+
+.task {
+  position: relative;
+  height: $task-height;
+  max-width: $task-width*0.8;
+}
+
+.task div input {
+  height: $task-height;
+  max-width: $task-width*0.8;
+  position: absolute;
+}
+
+.task > .completed {
+  opacity: 0.7;
+}
+
+
+table .button{
+  width: $task-width*0.2;
+  height: $task-height;
+}
+
+.button > * {
+  width: $task-width*0.2;
+  height: $task-height;
+}
+
+.task-container .ToDoItemsContainer table {
+  width: $task-width;
+}
+
+
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}

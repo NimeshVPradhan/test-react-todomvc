@@ -32,8 +32,8 @@ class ToDoItems extends React.Component{
       <table>
       <tbody>
         {this.props.items.map((item, index)=> <tr key={index} >
-                                    <DisplayToDo task={item.task} />
-                                    <th><button onClick={this.onClick.bind(this, index)} className={item.completed?'completed':'incomplete'}>{item.completed?'completed':'incomplete'}</button></th>
+                                    <DisplayToDo task={item} />
+                                    <th className="button"><button onClick={this.onClick.bind(this, index)} className={item.completed?'completed':'incomplete'}>{item.completed?'completed':'incomplete'}</button></th>
                                     </tr>)}
 
       </tbody>
